@@ -47,7 +47,7 @@ export const appConfig: ApplicationConfig = {
     },
     {
       provide: STORY_BASE_PATH,
-      useValue: '/assets/',
+      useValue: '/storyteller/assets/',
     },
     {
       provide: IMAGE_EXTENSION,
