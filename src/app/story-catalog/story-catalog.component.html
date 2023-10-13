@@ -1,0 +1,15 @@
+<div class="catalog-header">
+  <h1>{{ catalog.title }}</h1>
+  <p>{{ catalog.description }}</p>
+</div>
+
+<div class="catalog-content">
+  <div
+    *ngFor="let story of catalog.stories"
+    class="story"
+    [routerLink]="story.id"
+  >
+    <img [src]="story.id | toStoryUrl" [alt]="story.title" />
+    <p>{{ story.title }}</p>
+  </div>
+</div>
