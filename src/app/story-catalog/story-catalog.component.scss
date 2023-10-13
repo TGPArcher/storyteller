@@ -1,0 +1,43 @@
+.catalog-header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.catalog-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 3rem;
+}
+
+.story {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  border-color: black;
+  border-style: solid;
+  border-width: 1px;
+
+  width: 192px;
+
+  cursor: pointer;
+
+  img {
+    width: 192px;
+    height: 324px;
+  }
+
+  p {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  &:hover {
+    transform: scale(1.01);
+  }
+}

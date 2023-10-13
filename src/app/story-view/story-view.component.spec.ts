@@ -1,16 +1,16 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { PageThreeComponent } from './page-three.component';
+import { StoryViewComponent } from './story-view.component';
 
-describe('PageThreeComponent', () => {
-  let component: PageThreeComponent;
-  let fixture: ComponentFixture<PageThreeComponent>;
+describe('StoryViewComponent', () => {
+  let component: StoryViewComponent;
+  let fixture: ComponentFixture<StoryViewComponent>;
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      imports: [PageThreeComponent]
+      imports: [StoryViewComponent]
     });
-    fixture = TestBed.createComponent(PageThreeComponent);
+    fixture = TestBed.createComponent(StoryViewComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

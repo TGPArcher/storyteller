@@ -50,7 +50,7 @@
               ],
               "outputHashing": "all"
             },
-            "release": {
+            "gh-pages": {
               "budgets": [
                 {
                   "type": "initial",
@@ -151,8 +151,8 @@
             "routesFile": "prerender-routes.txt"
           },
           "configurations": {
-            "release": {
-              "browserTarget": "storyteller:build:release",
+            "gh-pages": {
+              "browserTarget": "storyteller:build:gh-pages",
               "serverTarget": "storyteller:server:production"
             },
             "production": {

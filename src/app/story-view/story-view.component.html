@@ -1,0 +1,22 @@
+<article *ngIf="story$ | async as story">
+  <h1 routerLink="../">{{ story.title }}</h1>
+
+  <img [src]="story.id | toStoryUrl" [alt]="story.title" />
+</article>
+
+<nav>
+  <a
+    *ngIf="prevStoryId$ | async as storyId; else placeholder"
+    [routerLink]="'/' + storyId"
+    >Previous</a
+  >
+  <a
+    *ngIf="nextStoryId$ | async as storyId; else placeholder"
+    [routerLink]="'/' + storyId"
+    >Next</a
+  >
+</nav>
+
+<ng-template #placeholder>
+  <span></span>
+</ng-template>
