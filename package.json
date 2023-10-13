@@ -11,7 +11,7 @@
     "serve:ssr": "node dist/storyteller/server/main.js",
     "build:ssr": "ng build && ng run storyteller:server",
     "prerender": "ng run storyteller:prerender",
-    "prerender:release": "ng run storyteller:prerender:release"
+    "prerender:gh-pages": "ng run storyteller:prerender:gh-pages"
   },
   "private": true,
   "dependencies": {
